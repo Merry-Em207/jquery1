@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+  </head>
+  <style>
+    .center {
+      margin: auto;
+      width: 80%;
+      padding: 10px;
+    }
+    .jquery {
+        border: red solid 1px;
+      }
+
+      html{
+        scroll-behavior: smooth;
+      }
+  </style>
+  <body>
+    <div class="center">
+      <form>
+        <input type="checkbox" id="myCheck" name="checkbox" />
+        <label for=""> I accept</label><br />
+        <button type="button" class="btn btn-primary button" disabled>
+          Submit
+        </button>
+      </form>
+      <div class="container mt-5">
+        <table class="table ">
+          <tr class="bg-success alter">
+            <th>Student</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Elizabeth</td>
+            <td>19</td>
+          </tr>
+          <tr  class="bg-success alter">
+            <td>Mary Mae</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Jeselle Ann</td>
+            <td>20</td>
+          </tr>
+          <tr  class="bg-success alter">
+            <td>May Gres</td>
+            <td>17</td>
+          </tr>
+        </table>
+      </div>
+
+      <button type="button" class="btn btn-warning mt-5 alternate">
+        Change Alternate Color
+      </button>
+      <div class="container mt-4">
+        <div class="form-group">
+          <input type="text" class="remain form-control w-25" maxlength="15" />
+          <label class="countChar">15</label> Character(s) remaining. <br />
+          <label class="displayValue font-weight-bold text-primary"></label>
+        </div>
+      </div>
+
+      <button class="btn btn-primary select">Add</button>
+      <select class="" id="select"></select>
+      <button class="btn btn-danger remove">Remove</button><br><br>
+
+      <button type="button" class="btn btn-success mt-5" id="good">
+        Good Morning</button
+      ><br />
+      <div class="d-flex flex-row mt-5">
+        Input Amount: <input type="text" class="form-control number w-25" />
+      </div>
+      
+      <button class="btn-primary btn animate">Animate</button><br /><br />
+      <span class="jquery">jquery </span>
+      <div class="mt-4">
+        <button class="btn btn-info up" role="button">Up</button>
+        <button class="btn btn-info down" role="button">Down</button
+        ><br /><br />
+        <button class="btn btn-info left" role="button">Left</button>
+        <button class="btn btn-info right" role="button">Right</button>
+      </div>
+
+      <div
+        class="move bg-primary border mt-2"
+        style="width: 80px; height: 80px; position: absolute"></div>
+    </div>
+<button class="btn top btn-primary">Scroll top</button>
+    <script>
+     
+    </script>
+
+   
+  </body>
+</html>
